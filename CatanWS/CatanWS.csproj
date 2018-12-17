@@ -151,6 +151,22 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\board_A.gif" />
+    <Content Include="Content\Images\ClayTile.jpg" />
+    <Content Include="Content\Images\Eight.png" />
+    <Content Include="Content\Images\Five.png" />
+    <Content Include="Content\Images\Four.png" />
+    <Content Include="Content\Images\Nine.png" />
+    <Content Include="Content\Images\One.png" />
+    <Content Include="Content\Images\RockTile.jpg" />
+    <Content Include="Content\Images\Seven.png" />
+    <Content Include="Content\Images\Sheep Tile.jpg" />
+    <Content Include="Content\Images\Six.png" />
+    <Content Include="Content\Images\Three.png" />
+    <Content Include="Content\Images\Two.png" />
+    <Content Include="Content\Images\WheatTile.jpg" />
+    <Content Include="Content\Images\WoodTile.jpg" />
+    <Content Include="Content\Images\Zero.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -160,9 +176,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -201,7 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

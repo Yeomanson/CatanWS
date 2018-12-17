@@ -3,29 +3,248 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Where Do I Settle?</h1>
+    <p class="lead"></p>
+
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Catan Predictor</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Place your tiles to match your board and see the best <b>spots</b> to settle!
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left; border: solid;">
+
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="hexagon" id="tileOne" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileTwo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileThree" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="hexagon" id="tileFour" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileFive" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileSix" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td>
+                    <div class="hexagon" id="tileSeven" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="hexagon" id="tileEight" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileNine" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileTen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td>
+                    <div class="hexagon" id="tileEleven" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td>
+                    <div class="hexagon" id="tileTwelve" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="hexagon" id="tileThirteen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileFourteen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileFifteen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td>
+                    <div class="hexagon" id="tileSixteen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <div class="hexagon" id="tileSeventeen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="hexagon" id="tileEighteen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td>
+                    <div class="hexagon" id="tileNineteen" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    </div>
+                </td>
+                <td></td>
+
+
+            </tr>
+        </table>
+
+
+
+    </div>
+    <div style="margin-left: 620px; border:solid">
+
+
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <img id="WheatTile" src="~/Content/Images/WheatTile.jpg" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div>
+                        <img id="OneTile" src="~/Content/Images/One.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div>
+                        <img id="TwoTile" src="~/Content/Images/Two.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+
+                <td>
+                    <div>
+                        <img id="ThreeTile" src="~/Content/Images/Three.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <img id="WoodTile" src="~/Content/Images/WoodTile.jpg" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img id="FourTile" src="~/Content/Images/Four.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img id="FiveTile" src="~/Content/Images/Five.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img id="SixTile" src="~/Content/Images/Six.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <img id="SheepTile" src="~/Content/Images/Sheep Tile.jpg" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img id="SevenTile" src="~/Content/Images/Seven.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img id="EightTile" src="~/Content/Images/Eight.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img id="NineTile" src="~/Content/Images/Nine.png" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <img id="RockTile" src="~/Content/Images/RockTile.jpg" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <img id="ClayTile" src="~/Content/Images/ClayTile.jpg" style="height:110px; width:100px;" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</div>
+
+
+
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+
+    function drop(ev) {
+        var data = ev.dataTransfer.getData("Text");
+        $(ev.target).removeClass("hexagon");
+        ev.target.appendChild(document.getElementById(data).cloneNode(true));
+        ev.preventDefault();
+    }
+</script>
